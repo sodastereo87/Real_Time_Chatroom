@@ -25,7 +25,7 @@ newNameForm.addEventListener('submit', e => {
     newNameForm.reset();
     // show and hide update username message
     updateMssg.innerText = `username updated to ${newName}`;
-    setTimeout(() => updateMssg.innerText = '', 1000);
+    setTimeout(() => updateMssg.innerText = '', 2000);
 });
 
 // update chat room
@@ -47,5 +47,3 @@ const chatroom = new Chatroom('general', username);
 
 // grt chats and render
 chatroom.getChats(data => chatUI.render(data));
-
-console.log();
