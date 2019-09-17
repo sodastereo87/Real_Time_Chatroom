@@ -28,12 +28,22 @@ newNameForm.addEventListener('submit', e => {
     setTimeout(() => updateMssg.innerText = '', 1000);
 });
 
+// update chat room
+rooms.addEventListener('click', e => {
+if(e.target.tagName === 'BUTTON'){
+    chatUI.clear();
+    chatroom.updateRoom(e.target.getAttribute('id'));
+    chatroom.getChats(chat => chatUI.render(chat));
+
+}
+});
+
 // check local storage for username 
 const username = localStorage.username ? localStorage.username : 'user';
 
 // class instances
 const chatUI = new ChatUI(chatList);
-const chatroom = new Chatroom('gaming', username);
+const chatroom = new Chatroom('general', username);
 
 // grt chats and render
 chatroom.getChats(data => chatUI.render(data));

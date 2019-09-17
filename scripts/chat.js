@@ -41,7 +41,7 @@ class Chatroom {
         localStorage.setItem('username', username);
     }
     // update room
-    updateRoom(room) {
+    updateRoom(room){
         this.room = room;
         console.log('room updated');
         if (this.unsub) {
