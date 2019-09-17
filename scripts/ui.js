@@ -1,12 +1,12 @@
 // render chat templates to the dom
 class ChatUI {
-    constructor(list){
+    constructor(list) {
         this.list = list;
     }
-    render(data){
+    render(data) {
         const when = dateFns.distanceInWordsToNow(
             data.created_at.toDate(),
-            {addSuffix: true}
+            { addSuffix: true }
         );
         const html = `
         <li class = "list-group-item">
