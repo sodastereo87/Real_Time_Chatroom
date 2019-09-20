@@ -1,8 +1,23 @@
-.container {
+  body {
+    background-image:  url("https://i.pinimg.com/originals/52/d4/8a/52d48a2e1cb69da394a68072ce096169.jpg");
+  }
+  .container {
     max-width: 600px;
+    border: 2px solid #dedede;
+    background-color: dimgrey;
+    border-radius: 5px;
+    padding: 10px;
+
+  }
+
+  .my-2 {
+    color: aliceblue;
+    font-size: 20px;
   }
 
   .btn {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
     background: rgb(95, 131, 231);
     color: white;
     outline: none !important;
@@ -20,9 +35,29 @@
   .time {
     font-size: 0.7em;
     color: #999;
+    /* float: right; */
+    padding-top: 2px;
+    border-bottom: 0;
   }
 
   .update-message {
     text-align: center;
     margin: 20px auto;
   }
+
+  h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
+
+  .message {
+    color: blue;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  .list-group-item {
+    margin: 2px 0;
+  }
+
+  input[type="submit"] {
+    font-family: FontAwesome;
+}
