@@ -1,10 +1,13 @@
   body {
-    background-image:  url("https://i.pinimg.com/originals/52/d4/8a/52d48a2e1cb69da394a68072ce096169.jpg");
+    font-family: 'Lexend Exa', sans-serif;
+    background: -moz-linear-gradient(left, rgb(88, 40, 177) 0%, rgb(66, 125, 153) 100%, rgb(20, 74, 223) 100%);
+    background: -webkit-linear-gradient(left,  rgb(88, 40, 177) 0%, rgb(66, 125, 153) 100%, rgb(20, 74, 223) 100%);
+    background: linear-gradient(to right,  rgb(88, 40, 177) 0%, rgb(66, 125, 153) 100%, rgb(20, 74, 223) 100%);
   }
+
   .container {
     max-width: 600px;
-    border: 2px solid #dedede;
-    background-color: dimgrey;
+    /* border: 2px solid rgb(95, 131, 231); */
     border-radius: 5px;
     padding: 10px;
 
@@ -47,6 +50,7 @@
 
   h1 {
     font-family: "Arial Black", Gadget, sans-serif;
+    color: white;
   }
 
   .message {
@@ -55,7 +59,8 @@
   }
 
   .list-group-item {
-    margin: 2px 0;
+      margin: 3px 0;
+      border-radius: 5px;
   }
 
   input[type="submit"] {
